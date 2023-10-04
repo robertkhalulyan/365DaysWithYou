@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Love Countdown</title>
+</head>
+<body>
+    <div class="hearts-background"></div> <!-- Add a container for the heart background -->
+    <div class="countdown">
+        <h1>Countdown to January 22nd</h1>
+        <div id="timer"></div>
+        <div id="days-together"><span id="daysCount"></span></div>
+    </div>
+    <div class="secret-entry">
+        <h3>Secret Entry:</h3>
+        <input type="password" id="passwordInput">
+        <button onclick="checkPassword()">Submit</button>
+        <p id="secretMessage" style="display: none;">Congratulations! You've unlocked the secret message.</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

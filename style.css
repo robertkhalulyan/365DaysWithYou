@@ -1,0 +1,78 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f39a9a; /* Soft pink background */
+    position: relative; /* To position the heart background */
+}
+
+.hearts-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('hearts-background.gif') repeat; /* Replace with your heart background image */
+    opacity: 0.5; /* Adjust opacity as needed */
+    z-index: -1; /* Position behind other content */
+    animation: floatHearts 10s linear infinite; /* Heart animation */
+}
+
+.countdown {
+    background-color: #ffffff; /* White timer container */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 100px auto;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #000; /* Black text color */
+}
+
+h1 {
+    font-size: 28px; /* Slightly larger font size */
+    color: #333; /* Vibrant pink color */
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 48px; /* Larger font size for a bold appearance */
+    font-weight: bold;
+    color: #333; /* Matching pink color */
+}
+
+#timer::before {
+    content: "Time Until Our Special Moment"; /* A romantic subtitle */
+    display: block;
+    font-size: 18px; /* Smaller subtitle font size */
+    color: #333; /* Darker gray color */
+    margin-top: 10px; /* Space between timer and subtitle */
+}
+
+#days-together {
+    font-size: 20px; /* Font size for the "Days together" text */
+    color: #000; /* Black text color */
+    margin-top: 10px; /* Space between timer and "Days together" */
+}
+
+/* Heart animation */
+@keyframes floatHearts {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Style for the embedded GIF */
+iframe.giphy-embed {
+    display: block;
+    margin: 20px auto; /* Adjust margins as needed */
+    max-width: 100%; /* Adjust width as needed */
+}

@@ -1,0 +1,43 @@
+/* poem-style.css */
+
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f3ede3; /* Vintage paper color */
+}
+
+.poem-container {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for readability */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* Enable positioning of the "365" and date elements */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.left-corner {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.right-corner {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.poem-content {
+    padding: 20px;
+}
